@@ -32,7 +32,7 @@ class nnUNetTrainerFocalLoss(nnUNetTrainer):
         return loss
 
 
-class nnUNetTrainerFLandCELoss(nnUNetTrainer):
+class nnUNetTrainerFLAndCELoss(nnUNetTrainer):
     """
     Standard nnUNetTrainer modified to have a combination of Focal Loss
     and CrossEntropyLoss with ADAPTED FocalLoss Implementation from:
@@ -89,7 +89,7 @@ class nnUNetTrainerFocalLossV2(nnUNetTrainer):
         return loss
 
 
-class nnUNetTrainerFLandCELossV2(nnUNetTrainer):
+class nnUNetTrainerFLAndCELossV2(nnUNetTrainer):
     """
     Standard nnUNetTrainer modified to have a combination of Focal Loss
     and CrossEntropyLoss with copied FocalLoss implementation from:
