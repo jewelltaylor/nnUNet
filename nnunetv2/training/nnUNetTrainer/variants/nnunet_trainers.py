@@ -1,4 +1,4 @@
-from nnunetv2.training.nnUNetTrainer.variants import FocalLoss, FocalLossV2, FocalLossAndCrossEntropyLoss, FocalLossAndCrossEntropyLossV2
+from nnunetv2.training.nnUNetTrainer.variants.losses import FocalLoss, FocalLossV2, FocalLossAndCrossEntropyLoss, FocalLossAndCrossEntropyLossV2
 
 import numpy as np
 
