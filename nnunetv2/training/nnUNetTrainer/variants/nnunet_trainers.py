@@ -11,6 +11,8 @@ class nnUNetTrainerFocalLoss(nnUNetTrainer):
     Standard nnUNetTrainer modified to have Focal Loss with ADAPTED FocalLoss implementation from:
     https://github.com/DIAGNijmegen/picai_baseline/blob/main/src/picai_baseline/nnunet/training_docker/focal_loss.py
     """
+    def __init__(self, *args, **kwargs):
+        super(nnUNetTrainerFocalLoss, self).__init__(*args, **kwargs)
 
     def _build_loss(self):
         loss = FocalLoss(
@@ -38,6 +40,8 @@ class nnUNetTrainerFLAndCELoss(nnUNetTrainer):
     and CrossEntropyLoss with ADAPTED FocalLoss Implementation from:
     https://github.com/DIAGNijmegen/picai_baseline/blob/main/src/picai_baseline/nnunet/training_docker/focal_loss.py
     """
+    def __init__(self, *args, **kwargs):
+        super(nnUNetTrainerFocalLoss, self).__init__(*args, **kwargs)
 
     def _build_loss(self):
         loss = FocalLossAndCrossEntropyLoss(
@@ -69,6 +73,8 @@ class nnUNetTrainerFocalLossV2(nnUNetTrainer):
     https://github.com/DIAGNijmegen/picai_baseline/blob/main/src/picai_baseline/nnunet/training_docker/focal_loss.py
 
     """
+    def __init__(self, *args, **kwargs):
+        super(nnUNetTrainerFocalLoss, self).__init__(*args, **kwargs)
 
     def _build_loss(self):
         loss = FocalLossV2()
